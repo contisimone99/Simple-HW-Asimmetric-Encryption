@@ -52,7 +52,7 @@ The SAE system implements a basic asymmetric encryption scheme using modular ari
 
 ## Module Description
 
-### SAE.sv
+### `db/SAE.sv`
 
 The SystemVerilog implementation consists of the following modules:
 
@@ -66,7 +66,7 @@ The SAE module supports three operation modes:
 - `2'b10`: Encryption
 - `2'b11`: Decryption
 
-### script.py
+### `model/script.py`
 
 The Python script provides a reference implementation of the SAE system and is used to generate test vectors for verification. It includes functions for:
 
@@ -74,7 +74,7 @@ The Python script provides a reference implementation of the SAE system and is u
 - Encryption
 - Decryption
 
-### SAE_tb.sv
+### `tb/SAE_tb.sv`
 
 The testbench simulates communication between two parties (Walter and Jesse) who exchange encrypted messages. The test flow includes:
 
